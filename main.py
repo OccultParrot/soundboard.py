@@ -73,7 +73,7 @@ class SoundBoard:
         else:
             # If pipeline is not active, start it
             threading.Thread(target=lambda: self.pipeline.start(self)).start()
-            self.on_off_button.config(text="⏸")
+            self.on_off_button.config(text="⏹")
 
     def run(self):
         """ Sets up the audio pipeline, and runs the GUI """
